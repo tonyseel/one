@@ -1,0 +1,22 @@
+# site setting
+title: one
+baseurl: one
+favicon: favicon.png
+banner: banner1.jpg
+banner-maintitle:  you looking for quality steel boats?
+banner-title: Are you looking for quality?
+banner-url: #
+markdown: kramdown
+exclude: ['README.md']
+permalink: pretty #to remove .html
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+#Gems
+gems: [jekyll-paginate]
+paginate: 60
+paginate_path: "/blog/page:num/"
+  
+include: ['_pages']
+
