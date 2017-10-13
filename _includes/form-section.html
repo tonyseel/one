@@ -1,7 +1,9 @@
  <aside class="col-md-6 col-two">
                 	<div class="request-box">
-                    	<h1>Request a Quote</h1>
-                        <p>Fill in the form and we will get back to you ASAP.</p>
+                      {% for form in site.data.form-section %}
+                    	<h1>{{form.form-title}}</h1>
+                        <p>{{form.form-subtitle}}</p>
+                        {% endfor %}
                         <div class="form-box">
                         	<div class="row">
                                 <aside class="col-md-6">
