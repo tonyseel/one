@@ -6,7 +6,7 @@
             	<aside class="col-md-4">
                 	<div class="service-img"><img src="{{site.baseurl}}/images/{{post.productimage}}" class="img-fluid" alt=""/></div>
                 	<h4>{{post.title}}</h4>
-                    <p>{{post.content}}</p>
+                    <p>{{post.excerpt | strip_html | truncatewords:10 }}</p>
 
                     <a href="{{site.baseurl}}{{post.url}}" class="learn-more-btn">learn More</a>
 
