@@ -23,26 +23,8 @@ layout: default
     <section class="clients-fluid">
     	<div class="container">
         	<div class="row">
-            	<aside class="col-md-6">
-                	<h2>Testimonials</h2>
-                    <div class="testimonials-box">
-                    	<div class="testimonials-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacus lectus, vulputate vitae cursus in, accumsan ac sem. Nulla facilisi. Suspendisse potenti.</div>
-                        <div class="testimonials-person">- Jhon Mark, Chennai</div>
-                    </div>	
-                </aside>
-                <aside class="col-md-6">
-                	<h2>Our Clients</h2>
-                    <ul class="client-list">
-                    	<li><img src="{{site.baseurl}}/images/client-01.jpg" alt=""/></li>
-                        <li><img src="{{site.baseurl}}/images/client-01.jpg" alt=""/></li>
-                        <li><img src="{{site.baseurl}}/images/client-01.jpg" alt=""/></li>
-                        <li><img src="{{site.baseurl}}/images/client-01.jpg" alt=""/></li>
-                        <li><img src="{{site.baseurl}}/images/client-01.jpg" alt=""/></li>
-                        <li><img src="{{site.baseurl}}/images/client-01.jpg" alt=""/></li>
-                        <li><img src="{{site.baseurl}}/images/client-01.jpg" alt=""/></li>
-                        <li><a href="#">View More</a></li>
-                    </ul>
-                </aside>
+            {% include testimonial-section.html %}
+             {% include client-section.html %}   
             </div>
         </div>
     </section>
@@ -52,45 +34,10 @@ layout: default
   	<section class="foot-top">
     	<div class="container">
         	<div class="row">
-            	<aside class="col-md-3">
-                	<h3>Quick Links</h3>
-                    <ul class="foot-links">
-                    	<li>Home</li>
-                        <li>About Us</li>
-                        <li>Specialization</li>
-                        <li>Gallery</li>
-                        <li>Clients</li>
-                        <li>Infrastucture</li>
-                        <li>Enquiry</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </aside>
-                <aside class="col-md-3">
-                	<h3>Our Specialization</h3>
-                    <ul class="foot-links">
-                    	<li>Polycarbonate Sheet Roofings</li>
-                        <li>Pre Engineered Buildings</li>
-                        <li>Heavy Structural Constructions</li>
-                    </ul>
-                    <h3>Follow Us</h3>
-                    <ul class="social-media">
-                    	<li><a href="#"><img src="{{site.baseurl}}/images/facebook.png" alt=""/></a></li>
-                        <li><a href="#"><img src="{{site.baseurl}}/images/twitter.png" alt=""/></a></li>
-                        <li><a href="#"><img src="{{site.baseurl}}/images/youtube.png" alt=""/></a></li>
-                        <li><a href="#"><img src="{{site.baseurl}}/images/google.png" alt=""/></a></li>
-                    </ul>
-                </aside>
-                <aside class="col-md-3">
-                	<h3>Facebook</h3>
-                    <div class="fb-page"><img class="img-fluid" src="{{site.baseurl}}/images/fb-page.jpg" alt=""/></div>
-                </aside>
-                <aside class="col-md-3">
-                	<h3>contact info</h3>
-                    <div class="location">Unique Roof Private Limited<br />SF No. 2/368C, Iruqur Road,<br />Chinniampalayam,<br />Coimbatore - 641 062.<br />Tamil Nadu, India.</div>
-                    <div class="phone">+91-422-2627177, 2625994</div>
-                    <div class="mobile">Customer Care : +91 98420 40422</div>
-                    <div class="email">enquiry@uniqueroof.net</div>
-                </aside>
+            	{% include footer-links.html %}
+                {% include footer-specilization.html %}
+                 {% include footer-facebook.html %}
+               {% include footer-address.html %}
             </div>
         </div>
     </section>
