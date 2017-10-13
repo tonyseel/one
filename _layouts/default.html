@@ -14,7 +14,25 @@
  
 {{content}}  
     
-
+  <footer>
+    <section class="foot-top">
+        <div class="container">
+            <div class="row">
+                {% include footer-links.html %}
+                {% include footer-specialization.html %}
+                 {% include footer-facebook.html %}
+               {% include footer-address.html %}
+            </div>
+        </div>
+    </section>
+    <section class="foot-bottom">
+        <div class="container">
+            <div class="row">
+                <aside class="col-md-12 text-center">Unique Roof Private Limited. All Rights Reserved.</aside>
+            </div>
+        </div>
+    </section>
+  </footer>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> 
 <script src="{{site.baseurl}}/js/popper.min.js"></script> 
