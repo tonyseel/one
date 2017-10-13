@@ -5,9 +5,9 @@ layout: default
 {% include top-social.html %}
 {% include menu-section.html %}  
   </header>
-{% include banner-section.html%}
+ <section class="home-banner"><img src="{{site.baseurl}}/images/{{site.banner}}" class="img-fluid" alt=""/></section>
   <article>
-     <section class="home-banner"><img src="{{site.baseurl}}/images/{{site.banner}}" class="img-fluid" alt=""/></section>
+    {% include product-section.html %}  
     <!--end here-->
     <section class="best-fluid">
     	<div class="container-fluid">
