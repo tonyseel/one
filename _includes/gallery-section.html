@@ -1,23 +1,24 @@
     <section class="gallery-fluid">
     	<div class="container">
-        	<div class="row"><aside class="col-md-12 text-center"><h1>Our Gallery</h1></aside></div>
-            <div class="row"><aside class="col-md-12 text-center"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacus lectus</h4></aside></div>
+        {% for gallery in site.data.gallery-section %}
+        	<div class="row"><aside class="col-md-12 text-center"><h1>{{gallery.gallery-title}}</h1></aside></div>
+            <div class="row"><aside class="col-md-12 text-center"><h4>{{gallery.gallery-content}}</h4></aside></div>
             <div class="row">
             	<aside class="col-md-3">
-                	<div class="gallery-img"><img src="{{site.baseurl}}/images/product.jpg" class="img-fluid" alt=""/></div>
-                    <div class="gallery-title">Product Title</div>
+                	<div class="gallery-img"><img src="{{site.baseurl}}/images/{{gallery.gallery-img-one}}" class="img-fluid" alt=""/></div>
+                    <div class="gallery-title">{{gallery.gallery-title-one}}</div>
                 </aside>
                 <aside class="col-md-3">
-                	<div class="gallery-img"><img src="{{site.baseurl}}/images/product.jpg" class="img-fluid" alt=""/></div>
-                    <div class="gallery-title">Product Title</div>
+                	<div class="gallery-img"><img src="{{site.baseurl}}/images/{{gallery.gallery-img-two}}" class="img-fluid" alt=""/></div>
+                    <div class="gallery-title">{{gallery.gallery-title-two}}</div>
                 </aside>
                 <aside class="col-md-3">
-                	<div class="gallery-img"><img src="{{site.baseurl}}/images/product.jpg" class="img-fluid" alt=""/></div>
-                    <div class="gallery-title">Product Title</div>
+                	<div class="gallery-img"><img src="{{site.baseurl}}/images/{{gallery.gallery-img-three}}" class="img-fluid" alt=""/></div>
+                    <div class="gallery-title">{{gallery.gallery-title-three}}</div>
                 </aside>
                 <aside class="col-md-3">
-                	<div class="gallery-img"><img src="{{site.baseurl}}/images/product.jpg" class="img-fluid" alt=""/></div>
-                    <div class="gallery-title">Product Title</div>
+                	<div class="gallery-img"><img src="{{site.baseurl}}/images/{{gallery.gallery-img-four}}" class="img-fluid" alt=""/></div>
+                    <div class="gallery-title">{{gallery.gallery-title-four}}</div>
                 </aside>
             </div>
             <div class="row">
@@ -28,5 +29,6 @@
                     </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
     </section>
