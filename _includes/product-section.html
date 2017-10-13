@@ -2,7 +2,7 @@
     	<div class="container">
         	<div class="row"> 
          
-            {% if post.categories contains 'blog' %}
+             {% for post in site.posts %}
             	<aside class="col-md-4">
                 	<div class="service-img"><img src="{{site.baseurl}}/images/{{post.productimage}}" class="img-fluid" alt=""/></div>
                 	<h4>{{post.title}}</h4>
@@ -11,27 +11,11 @@
                     <a href="{{site.baseurl}}{{post.url}}" class="learn-more-btn">learn More</a>
 
               	 </aside>
-                 <aside class="col-md-4">
-                  <div class="service-img"><img src="{{site.baseurl}}/images/{{post.product-image-one}}" class="img-fluid" alt=""/></div>
-                  <h4>{{post.title}}</h4>
-                    <p>{{post.content}}</p>
-
-                    <a href="{{site.baseurl}}{{post.url}}" class="learn-more-btn">learn More</a>
-
-                 </aside>
-                 <aside class="col-md-4">
-                  <div class="service-img"><img src="{{site.baseurl}}/images/{{post.product-image-one}}" class="img-fluid" alt=""/></div>
-                  <h4>{{post.title}}</h4>
-                    <p>{{post.content}}</p>
-
-                    <a href="{{site.baseurl}}{{post.url}}" class="learn-more-btn">learn More</a>
-
-                 </aside>
-                
+                 
                  
 
               	 
-                 {% endif %}
+                 {% endfor %}  
                
             </div>
         </div>
