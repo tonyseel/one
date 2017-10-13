@@ -2,24 +2,32 @@
     	<div class="container">
         	<div class="row"> 
           {% for product in site.data.product-section %}
+            {% if post.categories contains 'blog' %}
             	<aside class="col-md-4">
                 	<div class="service-img"><img src="{{site.baseurl}}/images/{{product.product-image-one}}" class="img-fluid" alt=""/></div>
                 	<h4>{{product.product-title-one}}</h4>
                     <p>{{product.product-content-one}}</p>
-                    <a href="#" class="learn-more-btn">learn More</a>
+
+                    <a href="{{site.baseurl}}{{post.url}}" class="learn-more-btn">learn More</a>
+
               	 </aside>
                  <aside class="col-md-4">
                 	<div class="service-img"><img src="{{site.baseurl}}/images/{{product.product-image-two}}" class="img-fluid" alt=""/></div>
                 	<h4>{{product.product-title-two}}</h4>
                     <p>{{product.product-content-two}}</p>
-                    <a href="#" class="learn-more-btn">learn More</a>
+
+                    <a href="{{site.baseurl}}{{post.url}}" class="learn-more-btn">learn More</a>
+
               	 </aside>
                  <aside class="col-md-4">
-                	<div class="service-img"><img src="{{site.baseurl}}/images/{{product.product-image-three}}" class="img-fluid" alt=""/></div>
+                <div class="service-img"><img src="{{site.baseurl}}/images/{{product.product-image-three}}" class="img-fluid" alt=""/></div>
                 	<h4>{{product.product-title-three}}</h4>
                     <p>{{product.product-content-three}}</p>
-                    <a href="#" class="learn-more-btn">learn More</a>
+
+                    <a href="{{site.baseurl}}{{post.url}}" class="learn-more-btn">learn More</a>
+
               	 </aside>
+                 {% endif %}
                  {% endfor %}
             </div>
         </div>
