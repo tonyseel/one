@@ -1,7 +1,11 @@
  <aside class="col-md-3">
                 	<h3>contact info</h3>
-                    <div class="location">Unique Roof Private Limited<br />SF No. 2/368C, Iruqur Road,<br />Chinniampalayam,<br />Coimbatore - 641 062.<br />Tamil Nadu, India.</div>
-                    <div class="phone">+91-422-2627177, 2625994</div>
-                    <div class="mobile">Customer Care : +91 98420 40422</div>
-                    <div class="email">enquiry@uniqueroof.net</div>
+                	{% for address in site.data.address-section %}
+                    <div class="location">{{address.address}}</div>
+                    {% endfor %}
+                    {% for social in site.data.top-social %}
+                    <div class="phone">{{social.phone-number}}</div>
+                    <div class="mobile">Customer Care : {{social.customer-care}}</div>
+                    <div class="email">{{social.email-address}}</div>
+                    {% endfor %}
                 </aside>
