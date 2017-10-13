@@ -2,6 +2,7 @@
 layout: post
 date: 2016-08-20
 title: Repairing Credit Score Issues - Your 3 Hour Solution
+productimage: product1.jpg
 category: blog
 ---
 
