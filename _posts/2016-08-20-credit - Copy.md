@@ -3,7 +3,6 @@ layout: post
 date: 2016-04-04
 title: Repairing Credit Score Issues - Your 3 Hour Solution
 productimage: product.jpg
-category: blog
 ---
 
 Is repairing credit score problems just one big headache for you? Do you find yourself cringing at the thought of answering the phone with another collection agency chasing and pestering you. Do you hate the thought of the time it will take to fix it. It's enough to make anyone scream!
