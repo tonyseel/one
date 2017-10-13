@@ -1,15 +1,18 @@
 <aside class="col-md-3">
-                	<h3>Our Specialization</h3>
+              {% for special in site.data.specilization-section %}
+                	<h3>{{special.specilization-title}}</h3>
                     <ul class="foot-links">
-                    	<li>Polycarbonate Sheet Roofings</li>
-                        <li>Pre Engineered Buildings</li>
-                        <li>Heavy Structural Constructions</li>
+                    	<li>{{special.point-one}}</li>
+                        <li>{{special.point-two}}</li>
+                        <li>{{special.point-three}}</li>
                     </ul>
+                {% endfor %}
+                {% for social in site.data.top-social %}
                     <h3>Follow Us</h3>
                     <ul class="social-media">
-                    	<li><a href="#"><img src="{{site.baseurl}}/images/facebook.png" alt=""/></a></li>
-                        <li><a href="#"><img src="{{site.baseurl}}/images/twitter.png" alt=""/></a></li>
-                        <li><a href="#"><img src="{{site.baseurl}}/images/youtube.png" alt=""/></a></li>
-                        <li><a href="#"><img src="{{site.baseurl}}/images/google.png" alt=""/></a></li>
+                    	<li><a href="{{social.facebook-url}}"><img src="{{site.baseurl}}/images/facebook.png" alt=""/></a></li>
+                        <li><a href="{{social.twitter-url}}"><img src="{{site.baseurl}}/images/twitter.png" alt=""/></a></li>
+                        <li><a href="{{social.youtube-url}}"><img src="{{site.baseurl}}/images/youtube.png" alt=""/></a></li>
+                {% endfor %} 
                     </ul>
                 </aside>
