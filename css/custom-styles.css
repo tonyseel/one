@@ -318,12 +318,13 @@ ul.foot-links {
 ul.foot-links li { 
 	float:left;
 	width:100%;
-	margin:0 0 5px 0;
+	
 	padding:0;
 	list-style:none;
 	display:list-item;
 	color:#FFF;
 }
+ul.foot-links li a{color:#fff;}
 ul.social-media { 
 	float:left;
 	width:100%;
@@ -440,7 +441,8 @@ footer .email {
 	}
 }
 /*--inner-page area ends--*/
-.inner-page{margin:40px 0px;width:100%;display:inline-block}
+.inner-page{    position: relative;
+    margin-top: 10%;;width:100%;display:inline-block}
 .inner-page img{width:100%;display:inline-block;margin-bottom:20px;}
 .inner-page p{font-size: 16px; font-family: 'Roboto'; line-height: 28px; color: #555;}
 .inner-page h3{font-size:30px;font-family: 'Roboto', sans-serif;    font-weight: bold;text-align:left;color:#00134c}

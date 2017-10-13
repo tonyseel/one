@@ -1,15 +1,11 @@
 ---
 layout: default
 ---
-  <header>
-{% include top-social.html %}
-{% include menu-section.html %}  
-  </header>
  <section class="home-banner"><img src="{{site.baseurl}}/images/{{site.banner}}" class="img-fluid" alt=""/></section>
   <article>
     {% include product-section.html %}  
     <!--end here-->
-    <section class="best-fluid">
+    <section class="best-fluid" id="nav2">
     	<div class="container-fluid">
         	<div class="row">
             	{% include about-section.html %}
@@ -20,7 +16,7 @@ layout: default
     <!--end here-->
 {% include gallery-section.html %}
      <!--end here-->
-    <section class="clients-fluid">
+    <section class="clients-fluid" id="nav5">
     	<div class="container">
         	<div class="row">
             {% include testimonial-section.html %}
