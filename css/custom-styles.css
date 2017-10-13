@@ -491,10 +491,10 @@ div.blog time {
     font-size: 12px;margin-bottom:20px;
 }
 ul.posts-archive h2 {
-    font-size: 30px;
+    font-size: 19px;
     font-weight: bold;
     display: inline;
-    line-height: 2.7em;color:#207aaf!important;text-decoration: none;
+    line-height: 2.7em;color:#207aaf!important;text-decoration:none!importa;n
 }
 span.more {
     display: block;
