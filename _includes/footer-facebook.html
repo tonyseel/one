@@ -1,4 +1,6 @@
 <aside class="col-md-3">
                 	<h3>Facebook</h3>
-                    <div class="fb-page"><img class="img-fluid" src="{{site.baseurl}}/images/fb-page.jpg" alt=""/></div>
+                      {% for facebook in site.data.footer-facebook %}
+                    <div class="fb-page"><img class="img-fluid" src="{{site.baseurl}}/images/{{facebook.facebook-image}}" alt=""/></div>
+                       {% endfor %}
                 </aside>
