@@ -2,16 +2,18 @@
     	<div class="container">
         	<div class="row">
             	<aside class="col-md-9">
-                	<span class="phone">+91-422-2627177, 2625994</span>
-                    <span class="email">enquiry@uniqueroof.net</span>
+                  {% for social in site.data.top-social %}
+                	<span class="phone">{{social.phone-number}}</span>
+                    <span class="email">{{social.email-address}}</span>
                 </aside>
                 <aside class="col-md-3">
                 	<ul class="social">
-                    	<li><a href="#"><img src="images/fb-01.png" alt=""/></a></li>
-                        <li><a href="#"><img src="images/tw-01.png" alt=""/></a></li>
-                        <li><a href="#"><img src="images/yt-01.png" alt=""/></a></li>
+                    	<li><a href="{{social.facebook-url}}"><img src="{{site.baseurl}}/images/fb-01.png" alt=""/></a></li>
+                        <li><a href="{{social.twitter-url}}"><img src="{{site.baseurl}}/images/tw-01.png" alt=""/></a></li>
+                        <li><a href="{{social.youtube-url}}"><img src="{{site.baseurl}}/images/yt-01.png" alt=""/></a></li>
                     </ul>
                 </aside>
+                {% endfor %}
             </div>
         </div>
     </section>
