@@ -1,17 +1,19 @@
---- 
-layout: default 
 ---
-<div class="banner-blog">
-		<div class="container">
-			<h1>{{page.title }}</h1>
+layout: default
+---
+
+<div class="inner-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="{{site.baseurl}}/images/{{page.image}}"/>
 			</div>
-	</div>
-	<!--bannersends-->
-<div class="blog-content">
-	    <div class="container">
-	    <div class="inner-section">
-           <h5>{{page.heading}}</h5>
-		     {{content}}
-	   </div>
+			<div class="col-md-8">
+				<h3>{{page.title}}</h3>
+				{{page.content}}
+				
+			</div>
 		</div>
+		{% include disqus.html %}
 	</div>
+</div>
