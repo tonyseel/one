@@ -1,14 +1,15 @@
 <aside class="col-md-3">
               
                 	<h3>Our Blog</h3>
-                    {% for post in site.posts limit:3 %}
+                   
                     <ul class="foot-links">
 
-                    	<li><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
-                      
-                    </ul>
-                  {% endfor %}
+                       {% for post in site.posts limit:3 %}
+                    	<li><a href="{{site.baseurl}}{{post.url}}">{{post.title | strip_html | truncatewords:28 }}</a></li>
+                      {% endfor %}
 
+                    </ul>
+                  
                 
                 {% for social in site.data.top-social %}
                     <h3>Follow Us</h3>
