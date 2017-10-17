@@ -324,7 +324,7 @@ ul.foot-links li {
 	display:list-item;
 	color:#FFF;
 }
-ul.foot-links li a{color:#fff;}
+ul.foot-links li a{color:#fff;text-decoration:none;}
 ul.social-media { 
 	float:left;
 	width:100%;
