@@ -1,8 +1,3 @@
----
-layout: default
-permalink: /404.html
----
-
 <div class="wrapper row2">
   <div id="container" class="clear">
     <!-- ####################################################################################################### -->
@@ -16,7 +11,15 @@ permalink: /404.html
         <h1>SORRY!</h1>
         <p>The Page You Requested Could Not Be Found On Our Server</p>
         <p>Go back to the <a href="javascript:history.go(-1)">previous page</a> or visit our <a href="#">homepage</a></p>
-        
+        <div id="respond">
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Site Search</legend>
+              <input type="text" value="Search Our Website&hellip;" onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;">
+              <input type="submit" id="submit" value="Search">
+            </fieldset>
+          </form>
+        </div>
       </div>
       <!-- ####################################################################################################### -->
     </section>
