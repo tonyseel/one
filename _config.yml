@@ -3,7 +3,7 @@ title: one
 baseurl: http://one.hatkit.com
 favicon: favicon.png
 logo:
-banner: home-banner.jpg  
+banner: banner1.jpg  
 markdown: kramdown
 exclude: ['README.md']
 permalink: pretty #to remove .html
