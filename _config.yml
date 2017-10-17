@@ -1,6 +1,7 @@
 # site setting
 title: one
 baseurl: http://one.hatkit.com
+site-name: HATKIT
 favicon: favicon.png
 logo:
 banner: banner1.jpg  
