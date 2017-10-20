@@ -449,7 +449,7 @@ footer .email {
 /*--inner-product page start--*/
 .productwrapper{padding:30px 0px}
 .productwrapper h2{font-size:30px;color:#524f4f;text-align:left}
-.productwrapper ul {width:100%;display:inline-block}
+.productwrapper ul {width:100%;display:inline-block;padding:0px;}
 .productwrapper ul li {
     float: left;
     width: 32%;
