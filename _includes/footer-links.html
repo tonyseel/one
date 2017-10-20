@@ -1,13 +1,16 @@
 <aside class="col-md-3">
                 	<h3>Quick Links</h3>
+
+       {% for menu in site.data.menu-section %}
                     <ul class="foot-links">
                     	 <li class="nav-item active"> <a class="nav-link" href="{{site.baseurl}}">Home <span class="sr-only">(current)</span></a> </li>
-                          <li class="nav-item"> <a class="nav-link" href="{{site.baseurl}}/nav2">About Us</a> </li>
+                          <li class="nav-item"> <a class="nav-link" href="{{site.baseurl}}/#nav2">{{menu.menu2}} </a> </li>
                          
-                          <li class="nav-item"> <a class="nav-link" href="{{site.baseurl}}/nav4">Gallery</a> </li>
-                          <li class="nav-item"> <a class="nav-link" href="{{site.baseurl}}/nav5">Clients</a> </li>
-                          <li class="nav-item"> <a class="nav-link" href="{{site.baseurl}}/blog">Blog</a> </li>
-                          <li class="nav-item"> <a class="nav-link" href="{{site.baseurl}}/nav2">Enquiry</a> </li>
-                          <li class="nav-item"> <a class="nav-link" href="{{site.baseurl}}/nav8">Contact Us</a> </li>
+                          <li class="nav-item"> <a class="nav-link" href="{{site.baseurl}}/products">{{menu.menu3}} </a> </li>
+                          <li class="nav-item"> <a class="nav-link" href="{{site.baseurl}}/#nav5">{{menu.menu4}} </a> </li>
+                          <li class="nav-item"> <a class="nav-link" href="{{site.baseurl}}/blog">{{menu.menu5}} </a> </li>
+                          <li class="nav-item"> <a class="nav-link" href="{{site.baseurl}}/#nav2">{{menu.menu6}} </a> </li>
+                          <li class="nav-item"> <a class="nav-link" href="{{site.baseurl}}/#nav8">{{menu.menu7}} </a> </li>
                     </ul>
+ {% endfor %}
                 </aside>
