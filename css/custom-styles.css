@@ -446,6 +446,21 @@ footer .email {
 .inner-page p{font-size: 16px; font-family: 'Roboto'; line-height: 28px; color: #555;}
 .inner-page h3{font-size:30px;font-family: 'Roboto', sans-serif;    font-weight: bold;text-align:left;color:#00134c}
 /*--blog page start --*/
+/*--inner-product page start--*/
+.productwrapper{padding:30px 0px}
+.productwrapper h2{font-size:30px;color:#524f4f;text-align:left}
+.productwrapper ul {width:100%;display:inline-block}
+.productwrapper ul li {
+    float: left;
+    width: 32%;
+    padding: 5px 5px;
+    display: inline-block;
+}
+.productwrapper ul li img{width:100%}
+/*--inner-product page start--*/
+
+
+
 div.intro-archives {
     border-bottom: solid 1px #eee;
     margin: 10px 0 20px;
